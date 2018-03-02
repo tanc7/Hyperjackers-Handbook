@@ -1,5 +1,11 @@
 # Performing your first network-based Hyper-Jump to attack people in a wireless network
 
+Chang Tan
+
+Lister Unlimited Cybersecurity Solutions, LLC.
+
+changtan@listerunlimited.com
+
 
 # Requirements
 
@@ -115,7 +121,10 @@ root@kali: nmap 10.81.24.0/24
 We need to do this safely, use tsocks and proxychains to have the physical Debian host run as a proxy.
 
 ```
+tsocks proxychains ssh root@192.168.0.1 'sudo nmap 10.81.24.0/24'
 ```
+
+So it basically, forces the first victim to act as the scanner. Once the scan completes it travels back through the proxy to us. 
 
 # Or... you can use Metasploit module and infect the Debian host with it to allow port-forwarding modules to run through the HOST to continue attacking more victims in the network
 
