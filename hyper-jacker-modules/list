@@ -1,0 +1,36 @@
+auto_pivoter.py
+mac_chains.py
+hyper_siem.py
+hs_ids_ips.py
+hs_cirt_alert_detector.py
+mdk3_offense.py
+mdk3_defense.py
+evasion_tricks.py
+RADIUS_ENT_attacker.py
+pip_installer.py 
+# (should be a executable or a script, and NOT a bash script)
+# should come with its own python 2.7.14 installation for Windows users if they dont have it installed
+# hashchecksums.txt
+hashcheck.py
+pip_requirements.log
+apt_install_requirements.log
+simple_visor_installer.py
+assembly_help.py
+python_hyperjumper_general_lib.py
+python_hyperjumper_hypervisor_workarounds_lib.py
+python_hyperjumper_ntopng_workarounds_lib.py
+python_hyperjumper_iwlwifi_workarounds_lib.py
+python_hyperjumper_wpa_supplicant_workaroujnds_lib.py
+python_hyperjumper_f_society_contributions_lib.py
+python_hyperjumper_mdk3_contributions_lib.py
+python_hyperjumper_team_routersploit_contributions_lib.py
+python_hyperjumper_oscp_contributions_lib.py
+python_hyperjumper_msf_contributions_lib.py
+python_hyperjumper_cybrary_xss_contributions_lib.py
+python_hyperjumper_violent_python_contributions_lib.py
+python_hyperjumper_black_hat_python
+python_hyperjumper_hackers_playbook_contributions_lib.py
+python_hyperjumper_pupy_shell_contributions_lib.py
+python_hyperjumper_powershell_empire_contributions_lib.py
+python_hyperjumper_tor_obfs4_contributions_lib.py
+python_hyperjumper_mana_toolkit_contributions_lib.py

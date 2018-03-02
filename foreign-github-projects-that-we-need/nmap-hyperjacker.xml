@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.40 scan initiated Wed Feb 21 05:21:13 2018 as: nmap -sT -sV -p 1-6000 -T5 -O -A -n -Pn -&#45;traceroute -&#45;script banner,bitcoin-getaddr,bitcoin-info,bitcoinrpc-info,bittorrent-discovery,creds-summary,finger,fingerprint-strings,firewall-bypass,http-auth-finder,http-auth,http-cisco-anyconnect,http-cross-domain-policy,http-csrf,http-enum,http-passwd,resolveall,servicetags,ssl-enum-ciphers -oX /root/nmap-hyperjacker.xml 10.0.1.0/16 -->
+<nmaprun scanner="nmap" args="nmap -sT -sV -p 1-6000 -T5 -O -A -n -Pn -&#45;traceroute -&#45;script banner,bitcoin-getaddr,bitcoin-info,bitcoinrpc-info,bittorrent-discovery,creds-summary,finger,fingerprint-strings,firewall-bypass,http-auth-finder,http-auth,http-cisco-anyconnect,http-cross-domain-policy,http-csrf,http-enum,http-passwd,resolveall,servicetags,ssl-enum-ciphers -oX /root/nmap-hyperjacker.xml 10.0.1.0/16" start="1519219273" startstr="Wed Feb 21 05:21:13 2018" version="7.40" xmloutputversion="1.04">
+<scaninfo type="connect" protocol="tcp" numservices="6000" services="1-6000"/>
