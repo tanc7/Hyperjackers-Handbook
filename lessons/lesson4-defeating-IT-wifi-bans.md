@@ -89,6 +89,20 @@ ifconfig usb0 up
 dhclient usb0
 ```
 
+You also want to immediately ping google.com as soon as you regain control of your prompt. Some say ```8.8.8.8``` but `ping google.com` will show you whether or not DNS would work as well. If you can run the `dig` command then DNS is working. If you can `ping 8.8.8.8` but NOT `ping google.com` then DNS is NOT working.
+
+If DNS breaks, then you should add the DNS by...
+
+```
+echo '8.8.8.8' >> /etc/resolv.conf
+service resolvconf restart
+dhclient usb0 && ping google.com
+```
+
+*Please be aware that installing services like WireGuard can seriously break DNS services on Debian. If you want to regain network connectivity at this point you would need to bring wireguard down with a `ifconfig wg0-client down` (even uninstalling Wireguard leaves Debian broken at this point)*
+
+**This is pretty much how Linux works as of right now. They break it, you fix it. You're lucky I even managed to find this out. Most of the time we're left in the dark.**
+
 # Defeating a RADIUS Network (WPA2-ENT)
 
 Be sure to get the 'wpe' in the tag, as that is the proper one. It stands for wireless pwnage or pawn edition. And it has fake security so you can see credentials in cleartext.
@@ -102,10 +116,12 @@ apt-get update && apt-get install -y freeradius-wpe hostapd-wpe asleap mana-tool
 
 You can generate sensor ghosts to conceal your escape.
 ```
+mdk3 <iface> w -e <essid> -c -z
 ```
 
-You can drive the router insane
+You can spam duplicate hotspots
 ```
+mdk3 <iface>  b -n <essid>
 ```
 
 You can perform mass kicks and other types of disruption.
