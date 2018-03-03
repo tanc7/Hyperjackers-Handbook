@@ -1,43 +1,46 @@
 # Data Manipulation - Log Parsing
 
-```cat``` Read contents of file to the screen
-```read content<$pipe``` Read contents of a named pipe named variable pipe into a variable named 'content'
-```mkfifo $pipe``` Make a pipe named variable pipe
-```tail -f $file``` Read the last 3 lines to the screen and hold it OPEN, good for creating real-time displays with the bash console
-```awk -F '$fieldseperator' '{print $1}' While using a variable called $fieldseparator, separate each file by that, and then print the first column
-```egrep -i $searchterm``` Ignore-case (capital or lower) and search for anything that matches $searchterm
-```egrep -ix $s``` Do the same but now look for exact matches
-```egrep -iw $s``` Exact word
-```egrep -i $a | egrep -i $b``` From the search results of variable $a, look for whats in $b. Good for narrowing things down. 
-```egrep -i $search | egrep -vi '$ignore'``` Eliminate all appearances on the (per line) of $ignore out of the search results of $search
-```''``` Single quotes tend to work better in separate or making linux interpret whats between them
-```'sentence "term"'``` Double quotes should be placed into single quotes to better clarify that whats between them is interpreted
-
+```
+cat Read contents of file to the screen
+read content<$pipe Read contents of a named pipe named variable pipe into a variable named 'content'
+mkfifo $pipe Make a pipe named variable pipe
+tail -f $file Read the last 3 lines to the screen and hold it OPEN, good for creating real-time displays with the bash console
+awk -F '$fieldseperator' '{print $1}' While using a variable called $fieldseparator, separate each file by that, and then print the first column
+egrep -i $searchterm Ignore-case (capital or lower) and search for anything that matches $searchterm
+egrep -ix $s Do the same but now look for exact matches
+egrep -iw $s Exact word
+egrep -i $a | egrep -i $b From the search results of variable $a, look for whats in $b. Good for narrowing things down. 
+egrep -i $search | egrep -vi '$ignore' Eliminate all appearances on the (per line) of $ignore out of the search results of $search
+'' Single quotes tend to work better in separate or making linux interpret whats between them
+'sentence "term"' Double quotes should be placed into single quotes to better clarify that whats between them is interpreted
+```
 
 # Cover your tracks
 
-
-```echo '' > dirt``` Completely replace everything in the file/pipe named 'dirt' with NOTHING. No spaces. Note the '>' means replace.
-```echo 'moredirt' >> dirt``` Append (add to) a line containing 'moredirt' into a pipe named dirt. Note the '>>' means APPEND or add a new line to.
-```echo '' > ~/bash_history``` Replace your bash history with nothing (wipe it)
-```rm -rf ~/.cache && rm -rf /root/.cache && /tmp/*``` Wipe your cache and all temporary files including your browsing history. Do this before you shut down the machine
-```ifconfig wlp60s0 192.168.10.5``` Change your wireless interface's ip address to 192.168.10.5 from whatever it was before. **I highly recommend sticking with the same subnet. So if you are 192.168.10.135, you should restrict your IP choices to what is within the range of 192.168.10.0/24 and nothing else. Also, you might want to stick to the first 100 IP addresses.**
-```screen -S $new``` Make a new screen (a hidden terminal) named whatever $new contains
 ```
+echo '' > dirt Completely replace everything in the file/pipe named 'dirt' with NOTHING. No spaces. Note the '>' means replace.
+echo 'moredirt' >> dirt Append (add to) a line containing 'moredirt' into a pipe named dirt. Note the '>>' means APPEND or add a new line to.
+echo '' > ~/bash_history Replace your bash history with nothing (wipe it)
+rm -rf ~/.cache && rm -rf /root/.cache && /tmp/* Wipe your cache and all temporary files including your browsing history. Do this before you shut down the machine
+ifconfig wlp60s0 192.168.10.5 Change your wireless interface's ip address to 192.168.10.5 from whatever it was before. **I highly recommend sticking with the same subnet. So if you are 192.168.10.135, you should restrict your IP choices to what is within the range of 192.168.10.0/24 and nothing else. Also, you might want to stick to the first 100 IP addresses.**
+screen -S $new Make a new screen (a hidden terminal) named whatever $new contains
+```
+
 #within the new screen
 
+```
 CTRL + A + D
 ```
 
 This backgrounds the screen. Hiding it from authorities. 
-```screen -r $new``` Goes back to the hidden screen
+screen -r $new Goes back to the hidden screen
 
-```mdk3``` The forefather of all wireless exploitation toolkits today. Bit difficult to use so run ```mdk3 --fullhelp``` To look everything over and get some practice.
+`mdk3` The forefather of all wireless exploitation toolkits today. Bit difficult to use so run mdk3 --fullhelp To look everything over and get some practice.
 
-```tsocks proxychains```
+`tsocks proxychains`
 
-```ssh -NfD $localport $user@$ip -p $sshport``` Login via SSH at user@ipaddress through SSH port $sshport and then bind a SOCKS proxy onto it at 0.0.0.0:$localport
-```echo 'socks 0.0.0.0 $localport' >> /etc/proxychains.conf``` Add a new SOCKS proxy that you added in the previous step into the proxychain, remember, double pipe symbols! '>>', or else you will WIPE the file from a '>'
+`ssh -NfD $localport $user@$ip -p $sshport` Login via SSH at user@ipaddress through SSH port $sshport and then bind a SOCKS proxy onto it at 0.0.0.0:$localport
+`echo 'socks 0.0.0.0 $localport' >> /etc/proxychains.conf` Add a new SOCKS proxy that you added in the previous step into the proxychain, remember, double pipe symbols! '>>', or else you will WIPE the file from a '>'
 
 # Network interfaces manipulation commands
 
@@ -54,17 +57,17 @@ echo '' > /etc/udev/rules.d/70-persistent-net.rules
 nano /etc/udev/rules.d/70-persistent-net.rules
 ```
 And for each interface that file add...
-```
-ACTION=="add", SUBSYSTEM=="net", ATTR{address}=="$macaddress", NAME="$newname", SUBSYSTEMS=="pci" 
 
-```
+`ACTION=="add", SUBSYSTEM=="net", ATTR{address}=="$macaddress", NAME="$newname", SUBSYSTEMS=="pci" `
+
+
 
 Where $macaddress is the REAL mac address of the network card and $newname is whatever you want to call it, usually 'wlan0' 'wlan1' or 'eth0'. If you need to change it back to normal, then 
-```
-macchanger -p $iface
-```
 
-```hostnamectl set-hostname $hostname``` Change your HOSTNAME without rebooting. This allows you to play the part of rogue access points. Because when they log into your fake hotspot they will find out your $HOSTNAME
+`macchanger -p $iface`
+
+
+`hostnamectl set-hostname $hostname` Change your HOSTNAME without rebooting. This allows you to play the part of rogue access points. Because when they log into your fake hotspot they will find out your $HOSTNAME
 
 
 
@@ -75,9 +78,9 @@ How to make a working quickie script
 ```
 #!/bin/sh
 SHELL=/bin/bash
-
-All your scripting shit
 ```
+All your scripting shit
+
 
 How to make a script executable
 
@@ -86,7 +89,7 @@ How to make a script executable
 
 How to add a cronjob (starts at...)
 
-```crontab -e```
+`crontab -e`
 
 
 How to start multiple python programs with a bash script wrapper
@@ -98,13 +101,13 @@ SHELL=/bin/bash
 /usr/bin/python program_1.py &
 /usr/bin/python program_2.py &
 /usr/bin/python program_3.py &
-```
 
+```
 Then make this bash script a cronjob. Do not forget ampersands. 
 
 How to make sure the crontab will work
 
-```crontab -e```
+`crontab -e`
 
 And then add as the first UNCOMMENTED line
 
@@ -120,9 +123,9 @@ Now everything in the directory /usr/local/bin with the permisssion '755' and pr
 
 You can start the file as...
 
-```
-@reboot /bin/sh $binpath/bash_wrapper_for_python_files.sh
-```
+
+`@reboot /bin/sh $binpath/bash_wrapper_for_python_files.sh`
+
 
 Which runs every reboot. Each cronjob as its called, will run PARALLEL to each other.
 
