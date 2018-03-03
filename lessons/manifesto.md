@@ -1,3 +1,5 @@
+# Lister Unlimited: "Revolutionizing Cyber-Terrorism"
+
 # A lot of you are perplexed on how and why, I Chang Tan (d.b.a Chang Tan Lister), the founder and owner of a Cybersecurity company no older than a year, is apparently intentionally teaching to any curious newcomers out there, all for free apparently.
 ```
 1. The black arts of
@@ -32,7 +34,13 @@ I still have not filed my federal taxes because I spent so much time fending you
 My mother contracted a terminal cancer less than two weeks ago, and she has MAX 5 years left to live frfom squabbius carcinoma.
 My father is 80 years old. Look him up pigs. He was born in May 1944.
 And you think it's fucking funny to drive me to ruin?
+You know those bums out in the street in Vegas? They were people just like me. And every person who had a nice car, loving wife, and a family, well those wretches were the ones that drove that bums into homelessness.
 ```
+
+There is no such thing as a good person. You are your own worst enemy. And you will die with every sin embedded into your conciousness. But me, I seek not to. 
+
+You see, I am a felon. I do not have the ability to get a job, and don't believe any cop or probation officer that says that I can (a job to them sounds like eternal damnation pushing carts at Walmart to pay off supervision fees). So I created my own job. I am the Manager (you will address me as Manager or Managing Member, NEVER Chairman or CEO) of a cybersecurity firm called Lister Unlimited Cybersecurity Firm, LLC. It is legally registered in the State of Nevada and in the City of Las Vegas. But a bunch of pigs with a old grudge against me wants to see this vision destroyed. 
+
 I don't even have time to get my business done or to launch my Udemy course, the Cyberwarfare Instructor program (for a full list ofk offerings from Lister Unlimited Cybersecurity Solutions, LLC. please visit listerunlimited.com and inquire about our online Web Application Firewall deals provided by our Partner-Reseller Arrangement with Incapsula-Imperva, we offer monthly discounts of up to 25% that will be passed to you, our valued customer).
 
 # I have decided to intentionally give UNLV, a REAL PROBLEM.
@@ -40,6 +48,8 @@ I don't even have time to get my business done or to launch my Udemy course, the
 I am going to train, arm, and mobilize every curious motherfucker from UNLV to across the nation, the capability to perform a cyberattack across the entire kill-chain, from initial recon to landing a shell, to post-exploitation and pivoting to the next impressionable little fuck that made up some shit about me hacking (I am talking about you, fat sorority bitch at the student union). The goal is to enable someone like YOU, regardless of age, gender or creed, to perform devastating cyber-attacks on whatever makes your dick hard.
 
 I know you hate a lot of people. Thats why you looked up hacking. Because you got a hitlist already drawn up and done don't you? And you want to get even. No. Not even. You want to rout your enemies and them driven before your feet. I can get you started on causing some real trouble, something that actually would benefit ME, because more panic in the cybersecurity industry means more phone calls of distress on my business line, means more business.
+
+I will try my best to shatter any illusions or discouraging factors that you may have had. There are a lot of misinformed dumbshits out there. That spread misinformation. It could be, I guess, something done as a cybersecurity measure. Spoon fed lies, to keep you dumb. Dumber than sheep. Dumb as human. You didn't think going to college is worth anything did you? I followed my parent's lies. Look where I am now. 
 
 You will become the launchpad for my career. You havn't even read this page in it's entirety because I know you wanted to learn about getting even. I will make a cyber-soldier out of you.
 
@@ -72,3 +82,4 @@ However he is "getting quite old". And despairing that apparently people his age
 We will repeat this one more time, he does not have the time or motivation to "do this shit anymore". But he also knows this is his only chance before he ends up growing "too old".
 
 Either way, he is determined not to lose. And very 'excited' to learn of a opportunity to bait the police into gunning him down. Probably "turning the lights on a laptop on in a threatening manner" as well as stoking as much misconception about hacking as possible. He will be laughing at the OIS hearing on top of his little cloud and halo in heaven.
+
