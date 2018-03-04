@@ -287,4 +287,12 @@ msf post(multi/gather/ping_sweep) > run -j
 ```
 So basically it's a guaranteed or reliable way to determine how many people are on a  network. Or how many new victims.
 
+# Nikto Scanning with a HTTP proxy
 
+```nikto -host 8.8.8.8 -useproxy http://10.81.0.1:443```
+
+Be mindful that you must refer to your ncat http proxy as a WEB ADDRESS as shown above or else it doesn't work. Also be aware that this is a no-auth situation. If the proxifying server requires authorization then you must use this line
+
+# Closure
+
+Now I have gone through all of the scans and proxies WORTH mentioning but there are many more. This portion was written in consideration of stealth and evading detection. But you may also use LOCAL SSH FORWARDING and LOCAL HTTP FORWARDING on a host that has been COMPROMISED. Please read the remainder of this article from the SANS Institute: https://www.sans.org/reading-room/whitepapers/testing/tunneling-pivoting-web-application-penetration-testing-36117
