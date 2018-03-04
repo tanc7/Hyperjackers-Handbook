@@ -291,8 +291,13 @@ So basically it's a guaranteed or reliable way to determine how many people are 
 
 ```nikto -host 8.8.8.8 -useproxy http://10.81.0.1:443```
 
-Be mindful that you must refer to your ncat http proxy as a WEB ADDRESS as shown above or else it doesn't work. Also be aware that this is a no-auth situation. If the proxifying server requires authorization then you must use this line
+Be mindful that you must refer to your ncat http proxy as a WEB ADDRESS as shown above or else it doesn't work. Also be aware that this is a no-auth situation. If the proxifying server requires authorization then...
 
+If you need to authenticate to the HTTP server with ncat, you must use this line to stick a proxy with first
+
+```ncat --proxy $proxyhost:$proxyport --proxy-type http 443 --proxy-auth $user:$pass```
+
+Yes, thats right. IT's a cleartext user:password. Be careful and hopefully noone is sniffing your connection while doing this.
 # Closure
 
 Now I have gone through all of the scans and proxies WORTH mentioning but there are many more. This portion was written in consideration of stealth and evading detection. But you may also use LOCAL SSH FORWARDING and LOCAL HTTP FORWARDING on a host that has been COMPROMISED. Please read the remainder of this article from the SANS Institute: https://www.sans.org/reading-room/whitepapers/testing/tunneling-pivoting-web-application-penetration-testing-36117
