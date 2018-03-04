@@ -1,3 +1,15 @@
+# Background
+
+I primarily am certified in the attack and defense of Web Application Firewalls, and the breaching of Intrusion Detection and Prevention Systems.
+
+![](https://github.com/tanc7/Hyperjackers-Handbook/raw/master/lessons/ids-ips-cert.png)
+![](https://github.com/tanc7/Hyperjackers-Handbook/raw/master/lessons/sql-injection-cert.png)
+![](https://github.com/tanc7/Hyperjackers-Handbook/raw/master/lessons/xss-cert.png)
+
+I can attack on multiple vectors, but what do you do if ** you need to keep yourself on-the-run?**
+
+# Evasion: Wireless Attacks
+
 # Basic checklist of things you need to do
 
 1. Change your MAC address
