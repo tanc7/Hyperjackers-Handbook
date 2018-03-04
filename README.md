@@ -6,11 +6,21 @@ changtan@listerunlimited.com
 
 # Foreword
 
-Unless you are physically allowed to attack a Cloud Provider. Please don't actually do it. Only do this in your own controlled environment. The act of hyperjacking should be considered a crime with a life sentence. And since this crime is **already happening right now** the moment Congress passes a act won't be too long. 
+Unless you are physically allowed to attack a Cloud Provider. Please don't actually do it. Only do this in your own controlled environment. The act of hyperjacking should be considered a crime with a life sentence. And since this crime is **already happening right now** the moment Congress passes a act won't be too long.
 
 This course is meant to inform the public "How bad can things get" if a 'hacker' completely controls a virtual machine Hypervisor.
 
 And yes, someday a hyperjacker might be able to control every wireless pacemaker that was installed by a specific hospital through a infection from one of their domains and the info they may have learned from it. Think of how many lives could be at the hands of some dickhead that pwned a Amazon AWS Hypervisor years ago. And how much control over other people's lives that he has now.
+
+# Legal
+
+This subtopic of malicious hacking has largely been undiscussed in public circles. It should be considered a very legally sensitive "combat-form" of illegal entry into computer systems. For example, by successfully breaking into a Cloud Hypervisor that contains ANY domains or webpages that contain American owners. For each machine (quantified by webserver instances + what else you may have kicked down the doors of), you have accumulated 20 Federal charges for each machine successfully broken into, multiplied by how many connected machines are for that.
+
+You can easily catch a charge and a sentence for a 1,000 years for this. FYI!
+
+Furthermore, as a cybersecurity "guy", I guarantee that `that there is no guarantees that my counter-forensics tactics are actually, foolproof.` New methods and countermeasures come into the spotlight **every damn day**. But `it will DEFINITELY prolong your future cybercriminal career until the day you do get caught.`
+
+**TLDR, make at least enough monies to retain a lawyer.**
 
 # Tentative Curriculum
 
@@ -56,7 +66,7 @@ Thats means I will make a proxy, and make it sound like the scan is coming from 
 
 # What is a Hyper-Jacker?
 
-Hyper-Jackers or "acts of Hyper-Jacking" is the deliberate theft of a virtual machine instance, commonly a massive server or array in the cloud worth billions and holds the processing power of thousands of webservers. 
+Hyper-Jackers or "acts of Hyper-Jacking" is the deliberate theft of a virtual machine instance, commonly a massive server or array in the cloud worth billions and holds the processing power of thousands of webservers.
 
 # The equivalent to stealing a Cloud Hypervisor is conquering a entire planet.
 
@@ -68,7 +78,7 @@ To Raise aware on the dangers of Hyperjacking and Docker Container Boosting atta
 
 **1. Commit or perpetrate the act of Hypervisor Theft (Hyperjacking)**
 
-, including the bare basics, your first hyper-jump, reanimating your dead shell (resurrecting yourself), persisting yourself with the stolen Hypervisor. Basically, a Hyperjacker is a much stronger form of a Cracker. Hyperjackers, if you do not deprive them of their ability to resurrect themselves, will outlast even you in your real lifespan. 
+, including the bare basics, your first hyper-jump, reanimating your dead shell (resurrecting yourself), persisting yourself with the stolen Hypervisor. Basically, a Hyperjacker is a much stronger form of a Cracker. Hyperjackers, if you do not deprive them of their ability to resurrect themselves, will outlast even you in your real lifespan.
 
 **2. The scope of dangers and capabilities of a well experienced Hyperjacker**
 
@@ -77,22 +87,22 @@ To Raise aware on the dangers of Hyperjacking and Docker Container Boosting atta
 
 **3. New abilities that set Hyperjackers a grade above malicious crackers.**
 
- Powers afforded to Hyper-Jackers. A stronger form of SYSTEM LEVEL ROOT. Benefits of being closer to the bare-metal and how much power it affords you compared to your victims. 
+ Powers afforded to Hyper-Jackers. A stronger form of SYSTEM LEVEL ROOT. Benefits of being closer to the bare-metal and how much power it affords you compared to your victims.
 
 
 # The Scope of "Absolute Power" of a Successful Hyperjacker
 
 By now you are probably laughing at me. No more and never.
 
-# 1. I can "push" downgrades into your online presence 
+# 1. I can "push" downgrades into your online presence
 
 if you are the unfortunate tenant of my hyperjacked hypervisor. You think you are safe because you patched yourself from SPECTRE huh? I'll take care of that. I saved the original firmware patches since Intel needed a way to allow your SkyLake virtual machine to still work if a bug borked it >:D
 
-# 2. I can spin up my own "clone" instance to test malware 
+# 2. I can spin up my own "clone" instance to test malware
 
 versions on which have the exact build and anti-malware versions of your instance, thanks to disk-imaging.
 
-# 3. I can control port-forwarding rules 
+# 3. I can control port-forwarding rules
 
 that allows me to attack you "from the outside" using a "outsider device" (maybe sell the rights to pwn you to some random guy on the interwebs). For example
 
@@ -157,12 +167,12 @@ Linux can telnet so...
 
 ```
 
-Maybe even have it stored at my remote Amazon AWS instance with obfs4 protecting the contents from discovery. 
+Maybe even have it stored at my remote Amazon AWS instance with obfs4 protecting the contents from discovery.
 
-We already support and enable ALL of these capabilities as human-beings. 
+We already support and enable ALL of these capabilities as human-beings.
 
 	The obfs4 pluggable transport is also known as "faster version of scramblesuit" which is itself, used by Pupy Shell, a alternative "reverse shell payload" that is FREE and can be used by YOU my friend! https://github.com/n1nj4sec/pupy
-	Windows 7 to 10 still supports Telnet and Elevated Powershell via it's optional packages. 
+	Windows 7 to 10 still supports Telnet and Elevated Powershell via it's optional packages.
 	SMB shares is already enabled as Administrator for Windows Server 2016
 	Now naturally, you probably hate Windows 10 and Microsoft Auto-Forced-Updates so getting you to do this, especially since I am "your God" as the owner of the malicious hypervisor, this won't be very hard (:
 
@@ -181,7 +191,7 @@ The original effective value of the hypervisor. A million-bajillion dollars I gu
 ADD: The collective value of all proprietary intellectual property of the KVM or Xen or ESXi hypervisor
 ADD: The net worth of every web domain of every tenant that was doomed to be subjected to your tyranny.
 ADD: The net worth of all proprietary trade secrets, patents, copyrights that you might find out through the hypervisor
-ADD: The costs, damages incurred to get the original IT to completely eradicate your presence. Including a full hard disk wipe, overwritten with zeroes, or maybe full component replacement. Of every damn box at their datacenter. And router too (reverse shells can happen on routers thanks to routersploit and mipsle and mipsbe (little and big endian) payloads. 
+ADD: The costs, damages incurred to get the original IT to completely eradicate your presence. Including a full hard disk wipe, overwritten with zeroes, or maybe full component replacement. Of every damn box at their datacenter. And router too (reverse shells can happen on routers thanks to routersploit and mipsle and mipsbe (little and big endian) payloads.
 _____________________________________________________________________________________________________________________
 EQUALS: You get what I am saying?
 
@@ -207,4 +217,3 @@ Usually, with a even higher chance of success, because through the experience of
 ```Unless they physically unplug the box :(```
 
 # Then... We're fucked.
-
