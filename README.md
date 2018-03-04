@@ -22,6 +22,33 @@ Furthermore, as a cybersecurity "guy", I guarantee that `that there is no guaran
 
 **TLDR, make at least enough monies to retain a lawyer.**
 
+# Update: Released unfinished book (Beginner)
+
+Due the lack of subtopic grunt in the main repository. I have decided to release the STILL UNFINISHED Cyber Warfare Instructor Book.
+
+Originally it was meant to be a supplementary textbook meant for my upcoming Udemy class but due to the time chewed up in me fending off a bunch of rabid skiddies, I am now forced to release a still yet-unfinished book composed of mostly PowerPoint slides to serve as my "force-multiplier". Quickly skimming through the pages, you'll realize that this book is strictly for beginners and many of the topics it covers may be things that you already know. The purpose of the book is meant to get newbies up to speed for ultimately, this class. 
+
+Now I hate to repeat the same shit that I have taught before, and hence I have decided to release it.
+
+A few changes...
+
+1. There are no "final exams" or projects as mentioned in the book
+2. The book itself was undergoing major changes on the topic of encryption, obfuscation, and tunneling prior to this war
+3. There will be no certification (for now) in regards to the Cyberwarfare Instructor program, not until I pass my accounting class and have time to implement the testing and proctoring. 
+4. It will come later, much later as a lot of the material requires the updating but the concepts are the same. A lot of things have indeed changed but the book itself is capable of introducing newbies in basic wireless attacks. 
+
+The CWI course emphasized creation of a Kali Linux boot disk rather than a VM. With all consideration, you'll quickly realize that Kali Linux and Debian 9 are pretty much, exactly alike. The difference is that the Debian repository is substantially larger while Kali Linux focused primarily on penetration testing tools.
+
+Some tools in Kali Linux are not in the official Debian repository. They can instead be obtained by downloading Katoolin and carefully performing a TEMPORARY edit of your sources.list. However, since we do not need the repo outside of a handful of tools, all of this penetration testing suite capabilities can be performed in the VM installation of Kali Linux as emphasized by this course.
+
+There are only two reasons why you needed a bare-metal hardware installation of Kali Linux
+
+1. Compatibility with Wi-Fi drivers. Which can be supplemented by directly utilizing KVM's PCI Pass-Through Capabilities in the Virtual Manager interface.
+2. Bare-metal performance for password cracking. However, this is now finally met by KVM, and Nvidia-Docker. 
+
+As of right now, the book totaled 250 powerpoint slides, but I saved it as a PDF for compatibility purposes so you can view it on Linux. Be aware, that the book is still unfinished and in some cases, some sections are indeed outdated.
+
+
 # Tentative Curriculum
 
 1. Steps to hyperjackings, performing the easiest Hyper-Jump. The easiest hyper-jump requires you to infect one of your Virtual Machines with another VM. And for you to merge two separate and distinct networks together.
