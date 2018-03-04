@@ -4,6 +4,8 @@ Chang Tan
 Lister Unlimited Cybersecurity Solutions, LLC.
 changtan@listerunlimited.com
 
+# The Official Lister Unlimited Cyber-Terrorism Certification Course (Cloud VPS and Virtualization Focused)
+
 # Foreword
 
 Unless you are physically allowed to attack a Cloud Provider. Please don't actually do it. Only do this in your own controlled environment. The act of hyperjacking should be considered a crime with a life sentence. And since this crime is **already happening right now** the moment Congress passes a act won't be too long.
@@ -24,7 +26,7 @@ Furthermore, as a cybersecurity "guy", I guarantee that `that there is no guaran
 
 # Update: Released unfinished book (Beginner)
 
-Due the lack of subtopic grunt in the main repository. I have decided to release the STILL UNFINISHED Cyber Warfare Instructor Book.
+Due the lack of subtopic grunt in the main repository. I have decided to release the STILL UNFINISHED Cyber Warfare Instructor Book. https://github.com/tanc7/Hyperjackers-Handbook/raw/master/lessons/CWI_%20Wireless%20Attacks%20Course%20Slides.pdf
 
 Originally it was meant to be a supplementary textbook meant for my upcoming Udemy class but due to the time chewed up in me fending off a bunch of rabid skiddies, I am now forced to release a still yet-unfinished book composed of mostly PowerPoint slides to serve as my "force-multiplier". Quickly skimming through the pages, you'll realize that this book is strictly for beginners and many of the topics it covers may be things that you already know. The purpose of the book is meant to get newbies up to speed for ultimately, this class. 
 
