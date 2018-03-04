@@ -17,6 +17,8 @@ I am certified by Cybrary in the introduction of Incident Response and Advanced 
 
 **Foreword: I Strongly suggest that you take and pass Max Alexander's class for Incident Response and Advanced Forensics to get a better understanding of what I am explaining. https://www.cybrary.it/skill-certification-course/incident-response-certification-training-course**
 
+![ImageCert](https://github.com/tanc7/Hyperjackers-Handbook/raw/master/lessons/incidentresponsecert.png)
+
 The typical workday for a CHFI on a case is extremely procedural. Make no mistake, CHFI's are very much the same as you and I, hackers, but they look at the activities of cybercrime and cyberwarfare in a much different perspective.
 
 While we would look at methods of breaching a secure area or loopholes to flaunt the law, the CHFI is looking at our indicators and the trails we leave behind. This is why I emphasized constantly, the application of stealth tactics and covering your tracks. They all add up to this moment, where the "hideout" has been raided by LE and surrounded with police tape.
