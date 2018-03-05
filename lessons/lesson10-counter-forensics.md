@@ -1,11 +1,15 @@
-# Counter Forensics, or how a CHFI has a much harder time in holding the case together when prosecuting the bad guys
+Chang Tan
+Lister Unlimited Cybersecurity Solutions, LLC.
+changtan@listerunlimited.com
+
+# Counter Forensics as a Red Teamer, or "how a CHFI has a much harder time in holding the case together when prosecuting the bad guys"
 
 CHFI's or Computer Hacking Forensic Investigators, have to abide by several sources of authority in EVERY case, every INCIDENT, up to the court case that they are testifying in.
 
 In that time, these investigators are required to prevent the contamination of the evidence, to keep track and serialize all noted pieces of collected forensically viable data, to draw conclusions from encrypted and obfuscated sources...
 
 
-In Short, their job is much harder than ours. If our case, let's say involvement in a powerful cyber-crime syndicate was "contaminated" with scraps of evidence from their previous prosecuted case of a child pornography distributor were to be MIXED TOGETHER, due to the rushed implementation of a full hard disk wipe overwritten with zeroes, then the defense attorney can have the entire disk THROWN OUT.
+In Short, their job is much harder than ours. If our case, let's say **involvement in a powerful cyber-crime syndicate was "contaminated" with scraps of evidence from their previous prosecuted case** of a child pornography distributor were to be MIXED TOGETHER, due to the rushed implementation of a full hard disk wipe overwritten with zeroes, **then the defense attorney can have the entire disk THROWN OUT.**
 
 Everything in that hard drive cannot be used as evidence. Because it brings into question to the lawyer, and to the judge, on how reliable that evidence is now, due to contamination.
 
@@ -39,9 +43,9 @@ But CHFI has standards and a code to abide by. But the main thing that they wish
 
 Time to BUILD that case against you. And the harder you make it for them to make good use of that TIME, for example, by having all of your traffic and data obfuscated to appear as something unrelated to hacking, or following a daily procedure of evidence destruction, then the faster they need to work to find viable evidence. Before TIME (to your court hearing), RUNS OUT. 
 
-So the goal is NOT to break your shit, but to COMPROMISE the data's integrity or RENDER UNUSABLE to the investigator. 
+So the goal is NOT to break your shit, but **to COMPROMISE the data's integrity or RENDER UNUSABLE to the investigator.**
 
-It's impossible to wipe the disk cleanly with zeroes with a early-warning of at least 24 hours (for modern hard disks). But if we switched the data or added something that called into question to the judge of our actual motives, we stand a better chance at walking away free out of the courthouse.
+It's impossible to wipe the disk cleanly with zeroes without a early-warning of at least 24 hours (for modern hard disks). But if we switched the data or added something that called into question to the judge of our actual motives, we stand a better chance at walking away free out of the courthouse.
 
 Still, if possible, always overwrite your disks with zeroes when given the opportunity to. Like I said before, you need about 24 hours for every 2 TB of data you are trying to cleanly overwrite. 
 
@@ -72,7 +76,7 @@ http://blogs.getcertifiedgetahead.com/security-forensic-performance-based-questi
 
 # Leveraging our control of the flow of forensically viable information
 
-So it's clear, that basically, whenever incriminating data of ANY sort TOUCHES THE DISK, the likelihood of the CHFI and CIRTs scoring a conviction with viable evidence has now substantially increased.
+So it's clear, that basically, whenever incriminating data of ANY sort TOUCHES THE DISK (or recently got executed in memory), the likelihood of the CHFI and CIRTs scoring a conviction with viable evidence has now substantially increased.
 
 In truth, there is little we can do except for one thing. **Controlling how much incriminating data is saved into our hard drives and how long it will stay there**.
 
