@@ -1,11 +1,15 @@
-# Counter Forensics, or how a CHFI has a much harder time in holding the case together when prosecuting the bad guys
+Chang Tan
+Lister Unlimited Cybersecurity Solutions, LLC.
+changtan@listerunlimited.com
+
+# Counter Forensics as a Red Teamer, or "how a CHFI has a much harder time in holding the case together when prosecuting the bad guys"
 
 CHFI's or Computer Hacking Forensic Investigators, have to abide by several sources of authority in EVERY case, every INCIDENT, up to the court case that they are testifying in.
 
 In that time, these investigators are required to prevent the contamination of the evidence, to keep track and serialize all noted pieces of collected forensically viable data, to draw conclusions from encrypted and obfuscated sources...
 
 
-In Short, their job is much harder than ours. If our case, let's say involvement in a powerful cyber-crime syndicate was "contaminated" with scraps of evidence from their previous prosecuted case of a child pornography distributor were to be MIXED TOGETHER, due to the rushed implementation of a full hard disk wipe overwritten with zeroes, then the defense attorney can have the entire disk THROWN OUT.
+In Short, their job is much harder than ours. If our case, let's say **involvement in a powerful cyber-crime syndicate was "contaminated" with scraps of evidence from their previous prosecuted case** of a child pornography distributor were to be MIXED TOGETHER, due to the rushed implementation of a full hard disk wipe overwritten with zeroes, **then the defense attorney can have the entire disk THROWN OUT.**
 
 Everything in that hard drive cannot be used as evidence. Because it brings into question to the lawyer, and to the judge, on how reliable that evidence is now, due to contamination.
 
@@ -39,9 +43,9 @@ But CHFI has standards and a code to abide by. But the main thing that they wish
 
 Time to BUILD that case against you. And the harder you make it for them to make good use of that TIME, for example, by having all of your traffic and data obfuscated to appear as something unrelated to hacking, or following a daily procedure of evidence destruction, then the faster they need to work to find viable evidence. Before TIME (to your court hearing), RUNS OUT. 
 
-So the goal is NOT to break your shit, but to COMPROMISE the data's integrity or RENDER UNUSABLE to the investigator. 
+So the goal is NOT to break your shit, but **to COMPROMISE the data's integrity or RENDER UNUSABLE to the investigator.**
 
-It's impossible to wipe the disk cleanly with zeroes with a early-warning of at least 24 hours (for modern hard disks). But if we switched the data or added something that called into question to the judge of our actual motives, we stand a better chance at walking away free out of the courthouse.
+It's impossible to wipe the disk cleanly with zeroes without a early-warning of at least 24 hours (for modern hard disks). But if we switched the data or added something that called into question to the judge of our actual motives, we stand a better chance at walking away free out of the courthouse.
 
 Still, if possible, always overwrite your disks with zeroes when given the opportunity to. Like I said before, you need about 24 hours for every 2 TB of data you are trying to cleanly overwrite. 
 
@@ -64,8 +68,33 @@ When the CHFI goes over the crime scene, he or she is following the Order of Vol
 
 Partially destroyed hard disks can be recovered by connecting jumper alligator clips to parts of the motor. Hence the futility of smashing your beloved pwn-box. It's generally, a better idea if you just ran a powerful rare-earth magnet up and down the hard disk enclosure.
 
+This is a pretty comprehensive source.
+http://blogs.getcertifiedgetahead.com/security-forensic-performance-based-question/
+
+
 
 
 # Leveraging our control of the flow of forensically viable information
+
+So it's clear, that basically, whenever incriminating data of ANY sort TOUCHES THE DISK (or recently got executed in memory), the likelihood of the CHFI and CIRTs scoring a conviction with viable evidence has now substantially increased.
+
+In truth, there is little we can do except for one thing. **Controlling how much incriminating data is saved into our hard drives and how long it will stay there**.
+
+And even with that fact, we do not forget the Order of Volatility, by which even the cache can be recovered if the CHFI works fast enough. 
+
+We can control these factors by...
+
+1. Protocol & procedure
+2. Encryption, obfuscation, and tunneling. We are NOT referring to paid VPN services. The first thing they'll do is turn over the logs and keys to allow investigators to make that paper trail back to you! We will build our own network to utilize and attempt to maintain control of as much of our tangible pipelines as possible. With the Streisand Framework.
+3. Frequent on boot and shutdown wipes
+4. Preparation - Pre-defining targets and routes, and avoiding collateral damage that is a consequence of the aggressive use of scans, pivoting, and attacking worthless targets. Each embedded device like a router that you have hacked to reach your target has you on it's logs, and unless you have administrative privileges to clear those logs, you are on there forever.
+5. Credential rotation - Even if our encrypted hashes that are being transmitted across the wire may not be crackable, it can still be linked to us. If they find out that person X used LOIC downloaded from GitHub and transmitted the same enrypted hash to login to the volunteer botnet, it's a paper trail. Frequently rotate your SSH keys and other remote access creds. 
+6. Alibis, Plan B's, bugout-plans
+7. Data CORRUPTION, not DESTRUCTION - The more data we can contaminate or corrupt with misleading evidence, the more likely the case will fall apart. 
+8. If using bitcoin, DO NOT or AVOID turning it back in cash at all costs. We even got strip clubs in Vegas that accepts bitcoins.
+
+Even then, the rulings on net neutrality has basically permitted ISPs to turn against us, log our transactions and our traffic. Hence, #2 is most important. The more nodes that we have in our possession and fully control, the more we can mislead our pursuers. 
+
+
 
 # Not completed yet
