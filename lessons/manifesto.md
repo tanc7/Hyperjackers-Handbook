@@ -86,3 +86,24 @@ Either way, he is determined not to lose. And very 'excited' to learn of a oppor
 # Using a Command Prompt is NOT hacking. Remember that.
 
 Just make sure you get a good lawyer. I can't afford one thanks to pigs arresting me all the time even while running a legitimate business. Cops can't tell the difference between command prompts and hacking so they'll throw you in prison for a quick score on their quota.
+
+# Tributes and Inspiration
+
+**Steve Preisler AKA "Uncle Fester" of Secrets to Methamphetamine Manufacture Infamy.** [Wikipedia Entry](https://en.wikipedia.org/wiki/Uncle_Fester_(author))
+
+
+Mr. Preisler, or what he likes to be called "Uncle Fester", wrote the original Secrets to Methamphetamine Manufacture in the confines of his prison cell while doing his sentence in 1984. He has the noted distinction that his book is now a standard textbook reading material for the Drug Enforcement Agency.
+
+Mr. Preisler, when I was writing this book for introductory wireless attacks, I had "a name" in the back of my mind, but I couldn't picture, "who". I remembered there was someone someone, who liked to "stick it to the man" and was like me, stuck in a hole somewhere.
+
+Then I realized it was you. Now, I am a big fan but mainly of your history. I do have pdf copies of your book SOMEWHERE. But you got to remember, at least the way was brought up, running meth labs is fucking dangerous. While I appreciated the often hilarious methods you suggested to circumvent meth precursor blockades, I am mostly afraid of blowing myself up and melting away my skin.
+
+Plus, we got a lot of Breaking Bad Heisenbergs these days. At least, thats what I heard  about street drugs suddenly turning blue.
+
+But I did hear you [had a interview](http://hooverhog.typepad.com/hognotes/2012/07/porno-for-chemists-an-interview-with-uncle-fester.html) regarding the production of the show.
+
+Anyways, Mr. Preisler, how do you make a career out of when the public turns you into a villain? At least this is how I feel for myself. I am certainly not wanting to go for the Shrekeli Route. 
+
+You see, you actually had actual talent in understanding scientific processes, Martin Shrekeli has no talent, not even the talent to appease pissed off stockholders apparently. And yet he still managed to make himself a success out of being, basically a dick.
+
+
