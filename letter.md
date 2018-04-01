@@ -1,12 +1,14 @@
+# Did I get my six-star wanted level yet?
+
 **I am going to gun down each and every "graduate" at this year's Graduation Ceremony on May 12th.**
 
 **You brought me and my family to ruin even though I was trying to make a honest living**
 
-1. By making defamatory remarks about my company
-2. By calling in the FBI to take $5,500 of my stuff
-3. By calling me a malicious hacker
-4. By driving my company to bankruptcy
-5. By conspiring to put me in prison for no fuckign reason except that you wanted to impress some girl
+1. By making **defamatory remarks** about my company
+2. By **calling in the FBI** to take $5,500 of my stuff
+3. By calling me a **malicious hacker**
+4. By driving my company to **bankruptcy**
+5. By **conspiring to put me in prison** for no fuckign reason except that you wanted to impress some girl
 6. **Even the fucking public library accused me of being a hacker, after I was running for my life because some weirdo was taking notes on me at the computer lab and I lost my shit, pursued by UNLVPD and Metro across the city**. The only innocence I was granted was from this sweet lady that served as the CHFI for Metro, who had surrounded the building guns drawn. She proved that I was not hacking and instead had issues with my wireless card. **I liked her, I hoped to meet her someday. Dance with her at Stoneys or something.**
 7. **I am at my last chance to pass a class**, that you are causing me to fail.
 
